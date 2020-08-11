@@ -1,0 +1,7 @@
+public class User {
+	private Integer id;      
+	private String username;       
+	private String user_password;  
+	private Integer identity;   
+	
+}
