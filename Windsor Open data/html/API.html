@@ -1,0 +1,336 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>data</title>
+
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ 
+<style>
+table {
+border: solid 1px black;
+border-collapse: collapse;
+width:100%;
+}
+th, td {
+border: solid 1px black;
+height:50px;
+
+}
+thead {
+font-family: arial;
+background-color: #ccddee;
+}
+tfoot {
+background-color: #ddccee;
+font-family: times, serif;
+font-size: .9em;
+font-style: italic;
+}
+tr:hover {
+color: white;
+background-color: #722750;
+}
+
+.menu_list {
+width: 268px;
+margin: 0;
+}
+ 
+.menu_head {
+height: 47px;
+line-height: 47px;
+padding-left: 38px;
+font-size: 14px;
+color: #525252;
+cursor: pointer;
+border: 1px solid #f1f1f1;
+position: relative;
+margin: 0px;
+font-weight: bold;
+background: #51a9f18c;
+}
+ 
+.menu_list .current {
+background: #51a9f18c;
+}
+ 
+.menu_nva {
+line-height: 38px;
+border-left: 1px solid #51a9f18c;
+backguound: #fff;
+border-right: 1px solid #51a9f18c;
+}
+ 
+.menu_nva a {
+display: block;
+height: 38px;
+line-height: 38px;
+padding-left: 38px;
+color: #777777;
+background: #fff;
+text-decoration: none;
+border-bottom: 1px solid #51a9f18c;
+}
+ 
+.menu_nva a:hover {
+text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a.center {
+    float: none;
+}
+
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+.side {
+    -ms-flex: 15%; /* IE10 */
+    flex: 15%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+.main {   
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+.fakeimg {
+   background-color: #aaa;
+    
+    width: 100%;
+    padding: 20px;
+}
+.img1{
+   		
+   		background-image: url(../images/1.jpg);
+   		background-size: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+ 
+ 
+ 
+<body>
+ 
+
+ <div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="data.html">Data</a>
+  <a href="API.html">API</a>
+   <a href="interactive.html">Interactive</a>
+   <a href="home.html" class="center">Windsor Open Data</a>
+  <a href="register.html" class="right">Register</a>
+  <a href="log.html" class="right">Login in</a>
+</div>
+
+<div class="row">
+  <div class="side">
+  <div id="firstpaneDiv" class="menu_list">
+ 
+
+<h3 class="menu_head">Education</h3>
+<div style="display:none" class="menu_nva">
+<a href="#">Primary school</a>
+<a href="#">Middle school</a>
+<a href="#">University</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+</div>
+<h3 class="menu_head">Economic</h3>
+<div style="display:none" class="menu_nva">
+<a href="#">Finance</a>
+<a href="#">Taxation</a>
+<a href="#">Bank</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+</div><h3 class="menu_head">Legal service</h3>
+<div style="display:none" class="menu_nva">
+<a href="#">Lawyer</a>
+<a href="#">Law office</a>
+<a href="#">Notary</a>
+<a href="#">Judicial officer</a>
+<a href="#">Judicial office</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+</div><h3 class="menu_head">Medical hygiene</h3>
+<div style="display:none" class="menu_nva">
+<a href="#">covid-19</a>
+<a href="#">Medical institutions</a>
+<a href="#">Blood donation</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+</div>
+<h3 class="menu_head">Market surveillance</h3>
+<div style="display:none" class="menu_nva">
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+</div>
+<h3 class="menu_head">Ecosystem</h3>
+<div style="display:none" class="menu_nva">
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+<a href="#">xxx</a>
+</div> 
+ </div>
+</div>
+
+<div class="main">
+      <h2>API</h2>
+    <table>
+  <tr>      
+ <td colspan="5"> Input Parameters</td> 
+</tr>
+</thead>
+<tbody>
+<tr>     
+  <td>Parameter Name</td>     
+   <td>Parameter Type</td> 
+   <td>Is it required</td>      
+   <td>Defaults</td>  
+   <td>Description</td> 
+</tr> 
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<table>
+  <tr>      
+ <td colspan="5=3"> Output Parameters</td> 
+</tr>
+</thead>
+<tbody>
+<tr>     
+  <td>Parameter Name</td>     
+   <td>Parameter Type</td> 
+   <td>Description</td> 
+</tr>
+<tr>     
+  <td>status</td>     
+   <td>Int</td> 
+   <td>0 means failure, 1 means success</td> 
+</tr>
+<tr>     
+  <td>Msg</td>     
+   <td>String</td> 
+   <td>returned messages</td> 
+</tr>
+<tr>     
+  <td>data</td>     
+   <td>Int</td> 
+   <td>Return number</td> 
+</tr>
+</table>
+</div>
+
+ 
+<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#firstpaneDiv .menu_nva:eq(0)").show();
+$("#firstpaneDiv h3.menu_head").click(function(){
+$(this).addClass("current").next("div.menu_nva").slideToggle(200).siblings("div.menu_nva").slideUp("slow");
+$(this).siblings().removeClass("current");
+});
+$("#secondpane .menu_nva:eq(0)").show();
+$("#secondpane h3.menu_head").mouseover(function(){
+$(this).addClass("current").next("div.menu_nva").slideDown(400).siblings("div.menu_nva").slideUp("slow");
+$(this).siblings().removeClass("current");
+});
+});
+</script>
+
+</body>
+ 
+</html>
